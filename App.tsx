@@ -1,9 +1,5 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+// font-size yellow warning
+/* eslint-disable react-native/no-inline-styles */
 
 import React from 'react';
 import type {PropsWithChildren} from 'react';
@@ -21,7 +17,6 @@ import {
   Colors,
   DebugInstructions,
   Header,
-  LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
@@ -72,6 +67,11 @@ function App(): JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <View>
+          <Text style={{fontSize: 16}}>Hello World!</Text>
+          <Text style={{fontSize: 18}}>Hello World!</Text>
+          <Text style={{fontSize: 20}}>Hello World!</Text>
+        </View>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
@@ -89,7 +89,7 @@ function App(): JSX.Element {
           <Section title="Learn More">
             Read the docs to discover what to do next:
           </Section>
-          <LearnMoreLinks />
+          {/* <LearnMoreLinks /> */}
         </View>
       </ScrollView>
     </SafeAreaView>
